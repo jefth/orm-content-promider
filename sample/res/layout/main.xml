@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <LinearLayout
+            android:id="@+id/buttons_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        >
+
+        <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_weight="1"
+                android:id="@+id/button_add"
+                />
+
+        <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="Del"
+                android:layout_weight="1"
+                android:id="@+id/button_del"
+                />
+
+        <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="Upd"
+                android:layout_weight="1"
+                android:id="@+id/button_upd"
+                />
+
+        <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:text="Sel"
+                android:layout_weight="1"
+                android:id="@+id/button_sel"
+                />
+
+        </LinearLayout>
+
+    <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/buttons_bar"
+            />
+
+    <TextView
+            android:id="@android:id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No data"
+            />
+
+</RelativeLayout>
+
