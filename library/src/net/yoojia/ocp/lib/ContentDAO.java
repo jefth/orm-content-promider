@@ -122,6 +122,14 @@ public class ContentDAO<E extends BaseEntity> {
 		databaseHelper.update(data,clazz);
 	}
 
+	public E queryFirst(){
+		try {
+			return databaseHelper.getDaoEx(clazz).queryForFirst(null);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
 	/**
 	 * 查询所有数据
 	 * @return 数据库游标对象

@@ -23,4 +23,5 @@ public class BaseEntity implements BaseColumns {
     public long getId() {
         return id;
     }
+
 }
